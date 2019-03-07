@@ -1,0 +1,10 @@
+header {
+    height: 6vh;
+}
+#logo {
+    width: 30px;
+}
+#logout-btn {
+    color: red;
+    cursor: pointer;
+}
