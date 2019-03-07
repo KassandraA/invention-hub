@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 p-0">
+      <div id="inventions-list">
+        <ul
+        class="nav flex-column">
+          <li
+          class="nav-item point"
+          *ngFor="let inv of inventions; let i = index">
+            <a
+            class="nav-link"
+            (click)="setNewCoordinates(inv.geometry.coordinates)">
+            <span>{{ inv.properties.title }}</span>
+            (<span>{{ inv.properties.place }}</span>)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-8 p-0">
+      <div id="map">
+        <app-map></app-map>
+      </div>
+    </div>
+  </div>
+</div>
